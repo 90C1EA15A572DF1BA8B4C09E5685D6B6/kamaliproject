@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Student Profile</title>
+<style>
+	
+/*
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+*/
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(images/2.png) repeat left top;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #7F7F81;
+	background-color:#E8F3FF;
+	background-size:100%;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p, ul, ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+ul, ol {
+}
+
+a {
+	text-decoration: none;
+	color: #3ABADF;
+}
+
+a:hover {
+}
+
+img.border {
+	border: 6px solid #E1F1F6;
+}
+
+img.alignleft {
+	float: left;
+	margin-right: 25px;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+#wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Header */
+
+#header {
+	width: 1000px;
+	height: 110px;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+#logo {
+	height: 60px;
+	margin: 0;
+	padding: 10px 0px 0px 0px;
+	color: #FFFFFF;
+}
+
+#logo h1, #logo p {
+	margin: 0;
+	padding-top: 15px;
+}
+
+#logo h1 {
+    text-align:center;
+	padding-left: 30px;
+	letter-spacing: -1px;
+	text-shadow: #728927 -1px 1px 2px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 47px;
+	word-spacing:5px;
+	text-shadow:2px 2px 2px black;
+}
+
+#logo p {
+	margin: 0;
+	padding: 30px 0 0 34px;
+	text-shadow: #728927 -1px 1px 2px;
+	font: normal 18px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	width: 280px;
+	height: 110px;
+	padding: 0;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 210px 0 0 30px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 195px;
+	padding: 6px 10px;
+	border: none;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #7F7F81;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 1000px;
+	height: 61px;
+	margin:auto;
+	background: url(images/img02.jpg) repeat-x left bottom;
+	border-radius:15px 15px 0px 0px;
+}
+
+#menu ul {
+	margin: auto;
+	padding: 0px 0px 0px 48px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+}
+
+#menu li a {
+	display: block;
+	height: 41px;
+	margin-right: 1px;
+	padding: 20px 20px 0px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-shadow: #7E0044 -1px 1px 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #FFFFFF;
+	border: none;
+}
+#menu li ul{padding:0px;position:absolute;
+	background: url(images/img02.jpg)}
+#menu li ul li{display:none;}
+#menu li:hover ul li{display:block;height:50px}
+#menu li:hover ul li a{padding: 20px;}
+#menu li ul li{float:none;}
+#menu .current_page_item a {
+	background: url(images/img03.jpg) repeat-x left top;
+	text-shadow: #43206B -1px 1px 2px;
+}
+
+#menu a:hover {
+	background: url(images/img03.jpg) repeat-x left top;
+	text-decoration: none;
+}
+
+#splash {
+	width: 1000px;
+	height: 260px;
+	margin: 0px auto;
+	background: url(images/img05.jpg) no-repeat left top;
+}
+
+/* Page */
+
+#page {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	background: #FFFFFF;
+	background-image:url('images/1.jpg');
+	background-size:100% 100%;
+	color:Black;
+}
+
+#page-bgtop {
+}
+
+#page-bgbtm {
+	margin: 0px;
+	padding: 40px 30px 0px 10px;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 700px;
+	padding: 0px 5px;
+}
+
+.post {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #EFF4F5;
+}
+
+.post .title {
+	letter-spacing: -1px;
+	color: #1757AB;
+}
+
+.post .title a {
+	color: #7AC8D4;
+	border: none;
+}
+
+.post .meta {
+	padding-bottom: 5px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+}
+
+.post .meta a {
+}
+
+.post .entry {
+	text-align: justify;
+	margin-bottom: 25px;
+	padding: 10px 0px 0px 0px;
+}
+
+.links {
+	display: block;
+	width: 96px;
+	padding: 2px 0px 2px 0px;
+	background: #A53602;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 230px;
+	padding: 0px 0px 0px 0px;
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	margin: 0px 15px;
+	padding-bottom: 30px;
+}
+
+#sidebar li li {
+	padding-left: 15px;
+	line-height: 35px;
+	background: url(images/img07.jpg) no-repeat left 14px;
+	border-bottom: 1px solid #EFF4F5;
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	height: 38px;
+	padding: 12px 0 0 15px;
+	letter-spacing: -1px;
+	color: #95C500;
+}
+
+#sidebar p {
+	margin: 0 0px;
+	padding: 0px 20px 20px 20px;
+	text-align: justify;
+}
+
+#sidebar a {
+	border: none;
+	color: #7F7F81;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+	color: #95C500;
+}
+
+/* Calendar */
+
+#calendar {
+}
+
+#calendar_wrap {
+	padding: 20px;
+}
+
+#calendar table {
+	width: 100%;
+}
+
+#calendar tbody td {
+	text-align: center;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+/* Footer */
+
+#footer {
+	width: 1000px;
+	height: 55px;
+	margin: 0px auto 40px auto;
+	background: #EAEAEA url(images/img04.jpg) no-repeat left top;
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(images/img02.jpg) repeat-x left bottom;
+	border-radius:0px 0px 13px 13px;
+	color:White;
+}
+
+#footer p {
+	margin: 0;
+	padding-top: 22px;
+	line-height: normal;
+	font-size: 13px;
+	text-transform: uppercase;
+	text-align: center;
+	word-spacing:3px;
+}
+
+#footer a {
+	color:Black;
+	word-spacing:0px;
+}
+
+
+
+
+#ErrorTable
+{
+    color:Red;
+    font-size:17px;
+}
+#Designtable
+{ 
+	font-weight:bold;
+	padding:10px 20px;
+}
+#Designtable th
+{
+    font-size:19px;
+    padding-bottom:10px;
+    color:Maroon;
+    text-shadow:2px -2px 2px white;
+}
+#Designtable td
+{
+    font-family:@Arial Unicode MS;font-size:12pt;font-weight:bold
+}
+#Designtable td input[type='text']
+{
+    height:22px;
+	font-weight:bold;
+}
+#Designtable td input[type='submit']
+{
+    min-width:70px;
+	margin-top:5px;
+	padding:0px 10px;
+}
+
+#Designtable td input[type=text],#Designtable td input[type=password],#Designtable td input[type=file]{width:190px}
+#Designtable td textarea{width:190px}
+#Designtable td select{width:195px;
+    height: 22px;
+}
+</style>
+
+</head>
+
+<body>
+<form id="form1">
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+        <center>
+        <h1 ><a href="#">Student Profile Management System</a></h1>
+        </center>
+			
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu" style="z-index:2;margin:auto">
+		<ul>
+                    <li class="current_page_item"><a href="index.html" class="selected"><span></span>Home</a></li>
+                    <li id="liSignIn" runat="server"><a href="#profile"><span></span>PROFILE</a></li>
+                    <li><a href="#academic"><span></span>ACADEMIC</a>
+                        
+                     </li>
+                    <li><a href="#skills"><span></span>SKILLS</a></li>
+                    <li><a href="#contact"><span></span>CONTACT</a></li>
+                    
+		</ul>            
+	</div>
+	<!-- end #menu -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm" >
+				<div id="content">
+					<div id="profile">
+						<table style="width:100%;height:500px">
+							<tr>
+							   <td align="center">
+								  
+								 <table>
+									<tr>
+										<td align="center">
+											<div style="width:600px; height:600px; background:#CC99CC; border-radius:100px; background-image:url(kamali.jpeg); background-position:center">
+												
+											</div>
+										   
+										</td>
+									</tr>
+								</table>
+							   </td>
+							</tr>
+						</table>
+					</div>
+					<div id="academic">
+						<table border="1">
+						<tr>
+							<td>
+								School/College 
+							</td>
+							<td>
+								Standard Studied
+							</td>
+							<td>
+								Year of Passing
+							</td>
+							<td>
+								Percentage
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sammandham Hr.Sec School, Sembanarkoil 
+							</td>
+							<td>
+								10th
+							</td>
+							<td>
+								2018-2019
+							</td>
+							<td>
+								61.3
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Sammandham Hr.Sec School, Sembanarkoil 
+							</td>
+							<td>
+								12th
+							</td>
+							<td>
+								2020-2021
+							</td>
+							<td>
+								75.0
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Dharumapuram Adhinam Arts College, Mayiladuthurai 
+							</td>
+							<td>
+								B.Sc
+							</td>
+							<td>
+								2021-2024
+							</td>
+							<td>
+								76
+							</td>
+						</tr>
+					</table>
+					</div>
+					<div id="skills">
+							<table style="width:100%;height:500px">
+                        <tr>
+                           <td align="center">
+                              
+        					<table id="Designtable">
+            <tr>
+                <td align="center" style="text-align:left">
+						<table >
+							<tr>
+								<td style="color:#FF00FF; font-size:30px">
+									PACKAGES: 
+								</td>
+								<td style="color:#CC3366; font-size:20px">
+									<table>
+										<tr>
+											<td>
+												HTML
+											</td>
+										</tr>
+										<tr>
+											<td>
+												CSS
+											</td>
+										</tr>
+										<tr>
+											<td>
+												MS OFFICE
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td style="color:#3333FF; font-size:30px">
+									LANGUAGES: 
+								</td>
+								<td style="color:#3366FF; font-size:20px">
+									<table>
+										<tr>
+											<td>
+												C, C++, JAVA
+											</td>
+										</tr>
+										<tr>
+											<td>
+												PHP, PYTHON
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<td style="color:#FF0000; font-size:30px">
+									DATABASE: 
+								</td>
+								<td style="color:#006633; font-size:20px">
+									<table>
+										<tr>
+											<td>
+												MS Access
+											</td>
+										</tr>
+										
+									</table>
+								</td>
+							</tr>
+						</table>
+                   
+                </td>
+            </tr>
+        </table>
+                           </td>
+                        </tr>
+                    </table>
+					</div>
+					<div id="contact">
+							<table style="width:100%;height:500px">
+                        <tr>
+                           <td align="center">
+                              
+        					<table>
+								<tr>
+									<td align="center">
+										<center>   
+											<table>
+												<tr>
+													<td align="center">
+														<h3 style="color:#CC0099">Contact me through</h3>
+														</br></br></br>
+														<font color="#6633FF" style="font-size:100px">9345795323</font>
+														</br></br></br></br></br></br>
+													</td>
+												</tr>
+											</table>
+											</center>
+									</td>
+								</tr>
+							</table>
+                           </td>
+                        </tr>
+                    </table>
+					</div>
+				</div>
+				<!-- end #content -->
+				<div id="sidebar" style="padding-top:130px">
+					<ul>
+                       <marquee direction="up" height="400px">
+                           <!--<img src="images/5.jpg" width="230px" height="200px" />
+                           <img src="images/6.jpg" width="230px" height="200px" />
+                           <img src="images/4.jpg" width="230px" height="200px" />
+                           <img src="images/7.jpg" width="230px" height="200px" />
+                           <img src="images/8.jpg" width="230px" height="200px" />
+                          <img src="images/9.jpg" width="230px" height="200px" />-->
+                      </marquee>
+					</ul>
+				</div>
+				<!-- end #sidebar -->
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p>&copy; 2023. All rights reserved. Design by <a href="" rel="nofollow">G.KAMALI </a>.</p>
+</div>
+<!-- end #footer -->
+    </form>
+</body>
+</html>
